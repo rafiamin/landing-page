@@ -1,0 +1,378 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #1A1A1A;
+}
+
+.wrapper {
+    background-color: #FFF447;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/* Header section Start */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 15px 0;
+    margin-bottom: 5rem;
+}
+
+.logo {
+    /* background-color: red; */
+}
+
+.navbar {
+    /* background-color: sandybrown; */
+}
+
+.log-text {
+    font-size: 1.5rem;
+    color: #1A1A1A;
+}
+
+.log-text:hover {
+    transform: scale(0.97);
+}
+
+.navbar > ul{
+    display: flex;
+    gap: 35px;
+    list-style: none;
+}
+
+.navbar li > a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #1A1A1A;
+    font-weight: 300;
+}
+
+.navbar li:hover {
+    transform: scale(0.97);
+}
+/* Header section End */
+
+/* Hero Section Start */
+.hero-section {
+    display: flex;
+    max-width: 1100px;
+    margin: 0 auto;
+    align-items: center;
+    /* justify-content: space-between; */
+    margin-bottom: 5rem;
+}
+
+.hero-text {
+    flex: 1 1 50%;
+}
+
+.hero-text-heading {
+    font-size: 3rem;
+    margin: 0.5rem 0;
+}
+
+.hero-subtext {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.hero-btn {
+    display: inline-block;
+    padding: 10px 30px;
+    font-size: 1rem;
+    border: none;
+    background-color: #3EB595;
+    border-radius: 4px;
+    color: #F8F8F8;
+}
+
+.shop-btn {
+    background-color: transparent;
+    color: #1A1A1A;
+    border: 1px solid #1A1A1A;
+}
+
+.hero-btn:hover {
+    transform: scale(0.98);
+}
+
+.hero-image {
+    flex: 1 1 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.hero-image > img {
+    width: 80%;
+    height: auto;
+}
+/* Hero Section End */
+
+/* Prodect Section Start */
+.product {
+    background-color: #fafafa;
+    overflow: hidden;
+}
+
+.product-description, .product-heading {
+    text-align: center;
+}
+
+.product-heading {
+    margin-top: 5rem;
+    font-size: 3rem;
+}
+
+.product-description {
+    font-size: 1.125rem;
+}
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    margin: 5rem 10rem;
+}
+
+.card {
+    flex: 1 1 400px;
+    background-color: #fafafa;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
+}
+
+.card-image {
+    width: 100%;
+    height: auto;
+}
+
+.desc {
+    padding: 0.65rem 0.32px;
+    margin-left: 1rem;
+}
+
+.card-text {
+    margin-bottom: 0.32rem;
+}
+/* Prodect Section End */ 
+
+/* Testimonials Start */
+.testimonials {
+    background-color: #696969;
+    overflow: hidden;
+}
+
+/* margin top and bottom */
+.container {
+    margin: 5rem 0;
+}
+
+.testimonials-heading, .testimonials-subheading {
+    text-align: center;
+    color: #fafafa;
+}
+
+.testimonials-heading {
+    font-size: 3rem;
+}
+
+.testimonials-subheading {
+    font-size: 1.125rem;
+    margin-bottom: 5rem;
+}
+
+.flex-testimonials {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.testimonial {
+    background-color: #C9C9C9;
+    padding: 3rem;
+    border-radius: 0.32rem;
+    font-size: 1.125rem;
+}
+
+.signature {
+    padding-top: 0.32rem;
+}
+
+/* Testimonial End */
+
+/* Call To Action Start */
+.cta {
+    background-color: #fafafa;
+    overflow: hidden;
+}
+
+/* margin top and bottom */
+.container {
+    margin: 5rem 15rem;
+}
+
+.cta-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15rem;
+    background-color: #3EB595;
+    padding: 5rem;
+    border: 0.32rem;
+    color: #fafafa;
+}
+
+.cta-heading {
+    font-size: 2rem;
+}
+
+.cta-text {
+    font-size: 1.125rem;
+}
+
+.cta-btn > button{
+    display: inline-block;
+    padding: 10px 30px;
+    font-size: 1rem;
+    border: 1px solid #fafafa;
+    background-color: transparent;
+    border-radius: 4px;
+    color: #F8F8F8;
+}
+
+.cta-btn > button:hover {
+    transform: scale(0.98);
+}
+/* Call To Action End */
+
+.footer {
+    background-color: #FFF447;
+    padding: 3rem;
+    text-align: center;
+    font-size: 1.125rem;
+}
+
+/* Responsiveness */
+
+@media screen and (max-width: 1100px){
+    .header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .hero-section {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        margin: 5rem;
+    }
+
+    .hero-image {
+        /* display: flex;
+        justify-content: center; */
+        display: none;
+    }
+
+    .hero-text {
+        text-align: center;
+    }
+
+    .flex-testimonials {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        gap: 3rem;
+    }
+
+    .container {
+        margin: 5rem;
+    }
+
+    .cards {
+        margin: 5rem;
+    }
+
+}
+
+@media screen and (max-width: 700px){
+    .header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .testimonials-subheading, .testimonials-heading {
+        text-align: center;
+    }
+
+    .container {
+        margin: 2.5rem;
+    }
+
+    .cards {
+        margin: 2.5rem;
+    }
+
+    .hero-section {
+        margin: 2.5rem;
+    }
+
+    .footer {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 1180px) {
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 3rem;
+        margin: 5rem 5rem;
+    }
+
+    .card {
+        flex-basis: 300px;
+    }
+
+    .cta-flex {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .container {
+        margin: 1rem;
+    }
+
+    .cards {
+        margin: 1rem;
+    }
+
+    .navbar > ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-text-heading {
+        font-size: 2rem;
+    }
+
+    .hero-section {
+        margin: 1rem;
+    }
+
+    .footer {
+        font-size: 0.75rem;
+    }
+}
